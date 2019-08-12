@@ -4,7 +4,7 @@ function helloWorld() {
 }
 
 function sayHello() {
-
+    return "";
 }
 // function sum(a, b) {
 //         return a + b;

@@ -1,7 +1,7 @@
 // Unit tests for the helloWorld function
 describe('helloWorld', function() {
     it('should be a defined function', function() {
-      expect(typeof helloWorld).toBe('function');
+      expect(typeof helloWorld()).toBe('function');
     });
     it('should return a string when called', function() {
       expect(typeof helloWorld()).toBe("string");
@@ -16,7 +16,7 @@ describe('helloWorld', function() {
 
 describe("sum", function () {
     it("should be a defined function", function() {
-        expect(typeof sum) .toBe ("function")
+        expect(typeof sum).toBe ("function")
     });
     it('should return a number when called', function() {
         expect(sum(2, 3)).toBe(4);
@@ -31,6 +31,9 @@ describe("sum", function () {
 
 describe('sayHello', function(){
     it('should be a defined function', function() {
-        expect(typeof sayHello).toBe('function');
+        expect(typeof sayHello()).toBe('function');
+    });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe('string');
     });
 });
